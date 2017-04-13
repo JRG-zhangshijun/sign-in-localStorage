@@ -4,6 +4,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <h1>Don't work overtime!</h1>,
+  <h1>No work overtime!</h1>,
   document.getElementById('root2')
 );
