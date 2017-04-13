@@ -4,6 +4,19 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <h1>Hi, world!</h1>,
+  <h1>Don't work overtime!</h1>,
   document.getElementById('root2')
 );
+/*function tick(){
+  const element = (
+    <div>
+      <h1>Hello,world</h1>
+      <h2>It is {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root2')
+  )
+}
+setInterval(tick,1000)*/
