@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #7acbe6
+  /*background: #7acbe6*/
 }
-#root2{
+/*#root2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,4 +15,4 @@ h1{
   border: 5px dashed red;
   border-radius: 5px;
   box-shadow: 10px 10px 5px;
-}
+}*/
