@@ -15,15 +15,16 @@ class App extends Component {
     }
   }
   render() {
-
-    let todos = this.state.todoList.map((item, index) => {
-      return (
-        <li key={index}>
-          <TodoItem todo={item} onToggle={this.toggle.bind(this)}
-            onDelete={this.delete.bind(this)}/>
-        </li>
-      )
-    })
+    let todos = this.state.todoList
+      .filter((item) => !item.deleted)
+      .map((item, index) => {
+        return (
+          <li key={index}>
+            <TodoItem todo={item} onToggle={this.toggle.bind(this)}
+              onDelete={this.delete.bind(this)} />
+          </li>
+        )
+      })
 
     return (
       <div className="App">
@@ -31,7 +32,7 @@ class App extends Component {
         <div className="inputWrapper">
           <TodoInput content={this.state.newTodo}
             onChange={this.changeTitle.bind(this)}
-            onSubmit={this.addTodo.bind(this)}/>
+            onSubmit={this.addTodo.bind(this)} />
         </div>
         <ol>
           {todos}
@@ -39,17 +40,17 @@ class App extends Component {
       </div >
     )
   }
-  toggle(e,todo){
-    todo.status = todo.status === 'completed' ? '':'completed'
+  toggle(e, todo) {
+    todo.status = todo.status === 'completed' ? '' : 'completed'
     this.setState(this.state)
   }
-  changeTitle(event){
+  changeTitle(event) {
     this.setState({
       newTodo: event.target.value,
       todoList: this.state.todoList
     })
   }
-  addTodo(event){
+  addTodo(event) {
     this.state.todoList.push({
       id: idMaker(),
       title: event.target.value,
@@ -57,11 +58,11 @@ class App extends Component {
       deleted: false
     })
     this.setState({
-      newTodo:'',
+      newTodo: '',
       todoList: this.state.todoList
     })
   }
-  delete(event,todo){
+  delete(event, todo) {
     todo.deleted = true
     this.setState(this.state)
   }
@@ -71,7 +72,7 @@ export default App;
 
 let id = 0
 
-function idMaker(){
+function idMaker() {
   id += 1
   return id
 }
