@@ -1,6 +1,6 @@
 {
-   "homepage": "https://jrg-zhangshijun.github.io/HelloReact/build",
-  "name": "helloreact",
+   "homepage": "https://jrg-zhangshijun.github.io/TodoList/build",
+  "name": "TodoList",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
