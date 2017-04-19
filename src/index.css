@@ -1,8 +1,8 @@
 body{
-  background: #ddd;
+  background: rgb(87, 210, 247);
 }
 #root2{
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }

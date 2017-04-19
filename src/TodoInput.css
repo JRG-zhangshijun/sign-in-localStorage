@@ -4,4 +4,8 @@
     margin-bottom: 1em;
     font-size: 16px;
     padding: 0 .2em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(97,127,222);
+    background: transparent;
 }

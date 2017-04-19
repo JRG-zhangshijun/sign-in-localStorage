@@ -2,10 +2,11 @@
   color: #333;
   border: 1px solid #aaa;
   border-radius: 4px;
-  background: white;
+  background: rgb(243, 215, 181);
+  opacity: 1;
   margin: 2em;
   padding: 0 1em;
-  min-height: 20em;
+  min-height: 10em;
   min-width: 32em;
   box-shadow: 0 0 1em hsla(0,0%,0%,0.15);
 }
@@ -14,6 +15,9 @@
 }
 .App>.todoList>li:nth-child(even){
   background: transparent;
+}
+.App>h1{
+  text-align: center
 }
 /*.App-logo {
   animation: App-logo-spin infinite 20s linear;
