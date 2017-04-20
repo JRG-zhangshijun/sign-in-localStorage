@@ -1,9 +1,11 @@
 {
-   "homepage": "https://jrg-zhangshijun.github.io/TodoList/build",
+  "homepage": "https://jrg-zhangshijun.github.io/TodoList/build",
   "name": "TodoList",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "leancloud-realtime": "^3.4.1",
+    "leancloud-storage": "^2.1.4",
     "normalize.css": "^6.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
